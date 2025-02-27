@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+}
+form{
+    padding:20px;
+    border-bottom:1px dashed #999;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form input[type="text"]{
+    border:none;
+    border-bottom:1px dashed #999;
+    display:block;
+    padding:5px;
+    width:500px;
+    font-size:1.5em;
+    text-align:center;
+}
+form input[type="submit"]{
+    display:block;
+    background-color:transparent;
+    padding:10px 15px;
+    margin-top:20px;
+    border:1px solid #333;
+    border-radius:10px;
+}
+.tareas{
+    width:600px;
+    margin:10px auto;
+}
+.tarea{
+    border:1px solid #333;
+    padding:20px;
+    border-radius:20px;
+    margin-bottom:20px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+}
+.tarea h2{
+    font-family:sans-serif;
+    width:100%;
+    font-size:2em;
+    font-weight:normal;
+    display:none;
+}
+.tarea input{
+    display:none;
+    font-family:sans-serif;
+    width:100%;
+    font-size:2em;
+    font-weight:normal;
+    border:none;
+    border-bottom:1px dashed #999;
+    padding-bottom:5px;
+}
+.tarea .visible{
+    display:block;
+}
+.tarea .boton{
+    background-color:transparent;
+    border:1px solid #333;
+    border-radius:10px;
+    display:block;
+    padding:10px 15px;
+    margin-top:20px;
+}
+.tarea .estado{
+    display:block;
+    margin-top:20px;
+    width:50px;
+    height:20px;
+    border-radius:10px;
+    background-color:#333;
+    border:none;
+    position:relative;
+}
+.tarea .estado span{
+    display:block;
+    width:20px;
+    height:20px;
+    background-color:#f00;
+    border-radius:50%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:background-color 1s, left 1.2s;
+}
+.tarea .terminada span{
+    background-color:#0f0;
+    left:30px;
+}
+.tarea button:not(:last-child){
+    margin-right:20px;
+}
+.loading{
+    font-size:4em;
+    color:#777;
+    margin-top:20px;
+    text-align:center;
+}
